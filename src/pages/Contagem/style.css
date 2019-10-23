@@ -1,0 +1,60 @@
+
+/* 
+Container que comporta a imagem e o fundo branco... 
+Particularmente, não acho interessante ele aqui.. 
+eu colocaria ele no componente par que esta chamando essa tela..
+da menos dor de cabeça na hora de dar manutenção
+*/
+.content {
+    width: 100%;
+    background: #FFF;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+/* 
+fundo branco.. sequiser aumentar a altura, ajuste o height
+para ajustar a largura, antes deve ajustar o .content que é
+o container principal dela. Contudo, precisa verificar seu App.css
+pra ver se não tem nenhuma aoutra configuração atrapalhando
+*/
+.containerContagem{ 
+    width: 1200px; 
+    height: 180px; 
+    display: flex;
+    padding: 0px; 
+}
+
+/*
+    Ajustes no container vermelho é aqui. Se precisar aumentar a largura deles,
+    altere a width e dpois, para que eles fiquem centralizados, aumente a segunda
+    opção do margin, ela é a distância horizontal entre os containers e a primeira 
+    é a distância na parte superior e inferior em ralação ao fundo branco.
+    
+    Ajuste de posicionamento das palavras é aqui!!
+*/
+.contentContagem {
+    display: inline-block;
+    width: 150px;
+    height: 150px;    
+    background-color: rgb(194, 194, 194);
+    margin: 10px 7px auto;
+    border-radius: 4px;
+    box-shadow: 1px 2px 10px rgba(46, 46, 46, 0.8);
+    text-align: center;
+    
+}
+
+/*   Alterações nas palavras é aqui  */
+.contentContagem h1 {
+    color: rgb(20, 20, 20); 
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.contentContagem strong {
+    font-size: 20px;
+    margin-top: 25px;
+}
